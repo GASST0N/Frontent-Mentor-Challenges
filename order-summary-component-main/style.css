@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.309);
+}
+
+img {
+    width: 100%;
+}
+
+.content {
+    padding: 40px 40px;
+}
+
+h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+}
+
+.description {
+    padding: 24px 16px;
+    line-height: 140%;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+
+.music {
+    display: flex;
+}
+
+.music img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.paln {
+    display: flex;
+    flex-direction: column;
+}
+
+#price {
+    font-weight: 500;
+}
+
+#text {
+    color: hsl(223, 47%, 23%);
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 24px 12px;
+    align-items: center;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+.ticket a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.button {
+    width: 100%;
+    padding: 16px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    box-shadow: 1px 5px 24px rgb(117, 117, 250);
+}
+
+.sbutton {
+    margin-top: 24px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.button:hover {
+    background-color: hsl(245, 77%, 64%);
+    cursor: pointer;
+}
+
+.ticket a:hover {
+    color: hsl(245, 77%, 64%);
+    cursor: pointer;
+}
+
+.sbutton:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+@media (max-width:628px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
